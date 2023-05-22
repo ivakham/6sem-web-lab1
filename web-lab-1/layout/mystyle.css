@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: #161616;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+html, body {
+    height: 100%;
+}
+
+.dummy {
+    flex-grow: 1;
+}
+
+.header{
+    width: 86%;
+    height: 52px;
+    padding: 12px 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #E3C31A;
+}
+
+.header__logo{
+    height: 100%;
+}
+
+.searchbar{
+    padding: 0px 14px;
+    width: 566px;
+    height: 100%;
+    background: #EEEEEE;
+    border-radius: 10px;
+    border:none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+}
+.searchbar:focus{
+    border: 1px dotted #555;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.sortbar{
+    width: 290px;
+    height: 100%;
+    background: #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sortbar__label{
+    display: inline-block;
+    width: 123px;
+    height: 100%;
+    background: #DBDBDB;
+    border-radius: 10px 0px 0px 10px;
+    vertical-align: top;
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    color: #000000;
+}
+
+.sortbar__select{
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    border: none;
+    background: none;
+}
+
+.sortbar__select:focus{
+    border: solid #555;
+    border-radius: 0px 10px 10px 0px;
+    border-width: 1px;
+}
+
+.contents{
+    width: 86%;
+    padding:10px 7% 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.poster{
+    width: 146px;
+    height: 257px;
+}
+
+.poster__img{
+    width: 100%;
+    height: 217px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EEEEEE;
+}
+
+.poster__title{
+    margin: 0px;
+    width: 100%;
+    height: 41px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EEEEEE;
+}
